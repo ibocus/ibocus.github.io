@@ -1,38 +1,140 @@
-.vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
+.ledger-history {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  position: relative;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
+.ledger-history::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 1.4rem;
+  width: 1px;
+  background: rgba(245, 239, 226, 0.16);
 }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+.ledger-entry {
+  display: flex;
+  gap: 1.75rem;
+  padding: 1.6rem 1.25rem 1.6rem 0;
+  border-radius: 4px;
+  position: relative;
+  transition: background-color .25s ease, transform .25s ease;
 }
 
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+.ledger-entry:hover {
+  background-color: rgba(245, 239, 226, 0.03);
+  transform: translateX(4px);
 }
 
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+.ledger-entry.current {
+  background-color: rgba(180, 127, 37, 0.06);
+  border: 1px solid rgba(180, 127, 37, 0.24);
+  padding-left: 0.5rem;
 }
 
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+.ledger-entry.current:hover {
+  transform: none;
 }
 
-.vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+.ledger-index {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #14112B;
+  border: 1px solid rgba(180, 127, 37, 0.5);
+  color: #B47F25;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-left: 0;
 }
 
-.svg-inline--fa {
-    color: white;
+.ledger-entry.current .ledger-index {
+  background: #B47F25;
+  color: #14112B;
+  border-color: #B47F25;
 }
 
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
+.ledger-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.ledger-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ledger-head h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.ledger-tag {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #B47F25;
+  border: 1px solid rgba(180, 127, 37, 0.45);
+  border-radius: 2px;
+  padding: 0.15rem 0.5rem;
+}
+
+.ledger-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.9rem;
+  margin: 0.35rem 0 0.7rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+}
+
+.ledger-org {
+  color: rgba(245, 239, 226, 0.75);
+}
+
+.ledger-date {
+  color: #B47F25;
+}
+
+.ledger-body p {
+  margin: 0;
+  color: rgba(245, 239, 226, 0.65);
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+@media screen and (max-width: 600px) {
+  .ledger-history::before {
+    left: 1.15rem;
+  }
+
+  .ledger-entry {
+    gap: 1.1rem;
+    padding-right: 0.5rem;
+  }
+
+  .ledger-index {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 0.8rem;
+  }
+
+  .ledger-head h3 {
+    font-size: 1.1rem;
+  }
 }

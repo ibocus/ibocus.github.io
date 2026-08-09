@@ -13,21 +13,33 @@
   
 .projects-container .projects-grid .project {
     text-align: left;
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), border-color .3s ease, background-color .3s ease;
 }
-  
+
+.projects-container .projects-grid .project:hover {
+    transform: translateY(-6px);
+    border-color: rgba(180, 127, 37, 0.3);
+    background-color: rgba(245, 239, 226, 0.03);
+}
+
 .project h2:hover {
-    text-decoration: underline;
+    color: #B47F25;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-  
+
 .zoom {
     border-radius: 5px;
-    transition: transform .2s;
+    transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .3s ease;
     margin: 0 auto;
+    display: block;
 }
-  
-.zoom:hover {
-    transform: scale(1.05);
+
+.project:hover .zoom {
+    transform: scale(1.02);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
 }
 
 @media screen {

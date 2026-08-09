@@ -7,6 +7,7 @@ import {
   Contact,
   Navigation,
   Footer,
+  ScrollReveal,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -31,11 +32,11 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
-            <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
         </FadeIn>
+        <ScrollReveal><Expertise/></ScrollReveal>
+        <ScrollReveal><Timeline/></ScrollReveal>
+        <ScrollReveal><Project/></ScrollReveal>
+        <ScrollReveal><Contact/></ScrollReveal>
         <Footer />
     </div>
     );
