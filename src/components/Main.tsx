@@ -18,7 +18,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/ibocus/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Iqbal Bocus, PMP®</h1>
-          <p>Global IT Lead &middot; PM + Security Governance &middot; On the Path to CISO</p>
+          <p>Global IT Lead &amp; Security Governance Builder &middot; On the Path to CISO</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/ibocus" target="_blank" rel="noreferrer"><GitHubIcon/></a>

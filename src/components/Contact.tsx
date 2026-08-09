@@ -11,7 +11,7 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Get in Touch</h1>
-          <p>Open to global remote CISO / security leadership conversations &mdash; or just talk PM and GRC.</p>
+          <p>Open to global remote CISO / security leadership conversations, or just talk PM and GRC.</p>
           <div className="contact-links">
             <Button variant="contained" startIcon={<EmailIcon />} href="mailto:ibocus@hotmail.com">
               Email

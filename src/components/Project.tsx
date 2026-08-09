@@ -24,7 +24,7 @@ function Project() {
             <div className="project">
                 <a href="https://ibocus.github.io/registry-demo/" target="_blank" rel="noreferrer"><img src={registry} className="zoom" alt="Registry thumbnail" width="100%"/></a>
                 <a href="https://ibocus.github.io/registry-demo/" target="_blank" rel="noreferrer"><h2>Registry</h2></a>
-                <p>A compliance and ops platform for Mauritius management companies &mdash; statutory calendar, UBO registers, sanctions screening, time tracking, and billing in one place.</p>
+                <p>A compliance and ops platform for Mauritius management companies: statutory calendar, UBO registers, sanctions screening, time tracking, and billing in one place.</p>
             </div>
             <div className="project">
                 <a href="https://bocusiqbal.gumroad.com/" target="_blank" rel="noreferrer"><img src={cism} className="zoom" alt="CISM Practice Bank thumbnail" width="100%"/></a>
