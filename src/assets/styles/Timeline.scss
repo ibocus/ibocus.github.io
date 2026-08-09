@@ -12,7 +12,7 @@
   bottom: 0.5rem;
   left: 1.4rem;
   width: 1px;
-  background: rgba(245, 239, 226, 0.16);
+  background: rgba(232, 244, 245, 0.16);
 }
 
 .ledger-entry {
@@ -25,13 +25,13 @@
 }
 
 .ledger-entry:hover {
-  background-color: rgba(245, 239, 226, 0.03);
+  background-color: rgba(232, 244, 245, 0.03);
   transform: translateX(4px);
 }
 
 .ledger-entry.current {
-  background-color: rgba(180, 127, 37, 0.06);
-  border: 1px solid rgba(180, 127, 37, 0.24);
+  background-color: rgba(34, 166, 181, 0.06);
+  border: 1px solid rgba(34, 166, 181, 0.24);
   padding-left: 0.5rem;
 }
 
@@ -49,9 +49,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #14112B;
-  border: 1px solid rgba(180, 127, 37, 0.5);
-  color: #B47F25;
+  background: #0F2A52;
+  border: 1px solid rgba(34, 166, 181, 0.5);
+  color: #22A6B5;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 0.95rem;
   font-weight: 600;
@@ -59,9 +59,9 @@
 }
 
 .ledger-entry.current .ledger-index {
-  background: #B47F25;
-  color: #14112B;
-  border-color: #B47F25;
+  background: #22A6B5;
+  color: #0F2A52;
+  border-color: #22A6B5;
 }
 
 .ledger-body {
@@ -88,8 +88,8 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #B47F25;
-  border: 1px solid rgba(180, 127, 37, 0.45);
+  color: #22A6B5;
+  border: 1px solid rgba(34, 166, 181, 0.45);
   border-radius: 2px;
   padding: 0.15rem 0.5rem;
 }
@@ -104,16 +104,16 @@
 }
 
 .ledger-org {
-  color: rgba(245, 239, 226, 0.75);
+  color: rgba(232, 244, 245, 0.75);
 }
 
 .ledger-date {
-  color: #B47F25;
+  color: #22A6B5;
 }
 
 .ledger-body p {
   margin: 0;
-  color: rgba(245, 239, 226, 0.65);
+  color: rgba(232, 244, 245, 0.65);
   line-height: 1.55;
   max-width: 62ch;
 }

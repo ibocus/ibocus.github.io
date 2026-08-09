@@ -21,12 +21,12 @@
 
 .projects-container .projects-grid .project:hover {
     transform: translateY(-6px);
-    border-color: rgba(180, 127, 37, 0.3);
-    background-color: rgba(245, 239, 226, 0.03);
+    border-color: rgba(34, 166, 181, 0.3);
+    background-color: rgba(232, 244, 245, 0.03);
 }
 
 .project h2:hover {
-    color: #B47F25;
+    color: #22A6B5;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
