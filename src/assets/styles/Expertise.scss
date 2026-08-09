@@ -11,13 +11,27 @@
   
 .skills-container .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 32px 50px;
 }
-  
+
 .skills-container .skills-grid .skill {
     align-items: center;
     text-align: left;
+}
+
+.skills-container .skills-grid .skill:first-child {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 32px;
+    border: 1px solid rgba(180, 127, 37, 0.28);
+    border-radius: 4px;
+    background: rgba(180, 127, 37, 0.06);
+}
+
+.skills-container .skills-grid .skill:first-child h3 {
+    font-size: 1.5em;
 }
   
 .chip {
