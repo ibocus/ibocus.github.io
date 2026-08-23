@@ -1,1 +1,15 @@
-[]
+﻿[
+    {
+        "value":  [
+
+                  ],
+        "Count":  0
+    },
+    {
+        "id":  "goalboard-web",
+        "name":  "Goalboard Web",
+        "description":  "A browser-based client for GoalBoard, syncing goals with the mobile app through a shared account.",
+        "target":  "People tracking goals across web and mobile",
+        "addedDate":  "2026-08-23"
+    }
+]
