@@ -1,0 +1,77 @@
+.now-building-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  margin-top: 2.5rem;
+}
+
+.now-building-card {
+  text-align: left;
+  padding: 1.4rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(34, 166, 181, 0.24);
+  background-color: rgba(34, 166, 181, 0.06);
+  transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), border-color .3s ease, background-color .3s ease;
+}
+
+.now-building-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 166, 181, 0.45);
+}
+
+.now-building-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.now-building-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.now-building-tag {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #22A6B5;
+  border: 1px solid rgba(34, 166, 181, 0.45);
+  border-radius: 2px;
+  padding: 0.15rem 0.5rem;
+}
+
+.now-building-card p {
+  margin: 0.6rem 0 0.9rem;
+  color: rgba(232, 244, 245, 0.65);
+  line-height: 1.55;
+}
+
+.now-building-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.9rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.8rem;
+}
+
+.now-building-target {
+  color: rgba(232, 244, 245, 0.75);
+}
+
+.now-building-date {
+  color: #22A6B5;
+}
+
+@media screen and (max-width: 700px) {
+  .now-building-grid {
+    display: block;
+  }
+
+  .now-building-card {
+    margin-bottom: 1rem;
+  }
+}

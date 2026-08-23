@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {
   Main,
   Timeline,
+  NowBuilding,
   Expertise,
   Project,
   Contact,
@@ -35,6 +36,7 @@ function App() {
         </FadeIn>
         <ScrollReveal><Expertise/></ScrollReveal>
         <ScrollReveal><Timeline/></ScrollReveal>
+        <ScrollReveal><NowBuilding/></ScrollReveal>
         <ScrollReveal><Project/></ScrollReveal>
         <ScrollReveal><Contact/></ScrollReveal>
         <Footer />
