@@ -4,6 +4,8 @@ import cyberreadyCerts from '../assets/images/proj-cyberready-certs.svg';
 import registry from '../assets/images/proj-registry.svg';
 import cism from '../assets/images/proj-cism.svg';
 import pmToolkit from '../assets/images/proj-pmtoolkit.svg';
+import pmiCalendar from '../assets/images/proj-pmi-calendar.svg';
+import hiddenRealities from '../assets/images/proj-hidden-realities.svg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -35,6 +37,16 @@ function Project() {
                 <a href="https://www.linkedin.com/in/ibocus/" target="_blank" rel="noreferrer"><img src={pmToolkit} className="zoom" alt="PM Excel Toolkit thumbnail" width="100%"/></a>
                 <a href="https://www.linkedin.com/in/ibocus/" target="_blank" rel="noreferrer"><h2>PM Excel Toolkit</h2></a>
                 <p>A zero-bloat, PMP-compliant project tracking toolkit in a single file: executive dashboards, dynamic Gantt charts, RACI, risk matrix, and change logs.</p>
+            </div>
+            <div className="project">
+                <a href="https://pmi-mauritius-calendar.vercel.app" target="_blank" rel="noreferrer"><img src={pmiCalendar} className="zoom" alt="PMI Mauritius Calendar thumbnail" width="100%"/></a>
+                <a href="https://pmi-mauritius-calendar.vercel.app" target="_blank" rel="noreferrer"><h2>PMI Mauritius Calendar</h2></a>
+                <p>A yearly workshop calendar proposal for the PMI Mauritius Chapter, with PDU values on each event so members can plan certification renewal ahead of time.</p>
+            </div>
+            <div className="project">
+                <a href="https://github.com/ibocus/hidden-realities-playbook" target="_blank" rel="noreferrer"><img src={hiddenRealities} className="zoom" alt="Hidden Realities Playbook thumbnail" width="100%"/></a>
+                <a href="https://github.com/ibocus/hidden-realities-playbook" target="_blank" rel="noreferrer"><h2>Hidden Realities Playbook</h2></a>
+                <p>Real, anonymised stories captured live during an ISO 27001:2022 ISMS implementation &mdash; the organisational 80% the frameworks don&apos;t tell you about.</p>
             </div>
         </div>
     </div>
