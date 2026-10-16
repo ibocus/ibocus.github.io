@@ -7,6 +7,7 @@ import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
     "ISO/IEC 27001",
+    "CISM",
     "GRC",
     "NIST CSF",
     "ITGC",
@@ -42,7 +43,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faShieldHalved} size="3x"/>
                     <h3>Security Governance &amp; Compliance</h3>
-                    <p>15+ years across financial services, legal, and healthcare. Lead Implementor of ISO 27001:2022: built an ISMS from the ground up, from risk assessment to Annex A controls to audit readiness.</p>
+                    <p>15+ years across financial services, legal, and healthcare. CISM-certified and Lead Implementor of ISO 27001:2022: built an ISMS from the ground up, from risk assessment to Annex A controls to audit readiness.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Focus areas:</span>
                         {labelsFirst.map((label, index) => (

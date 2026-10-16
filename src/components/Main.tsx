@@ -33,7 +33,7 @@ function Main() {
           </div>
         </div>
 
-        <span className="corner corner-bl">PMP&reg; &middot; CISM Candidate</span>
+        <span className="corner corner-bl">PMP&reg; &middot; CISM</span>
         <span className="corner corner-br">Ref. IB-2026-01</span>
       </div>
     </div>

@@ -6,6 +6,8 @@ import cism from '../assets/images/proj-cism.svg';
 import pmToolkit from '../assets/images/proj-pmtoolkit.svg';
 import pmiCalendar from '../assets/images/proj-pmi-calendar.svg';
 import hiddenRealities from '../assets/images/proj-hidden-realities.svg';
+import carServiceBooking from '../assets/images/proj-car-service-booking.svg';
+import careRecruitment from '../assets/images/proj-care-recruitment.svg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -47,6 +49,16 @@ function Project() {
                 <a href="https://github.com/ibocus/hidden-realities-playbook" target="_blank" rel="noreferrer"><img src={hiddenRealities} className="zoom" alt="Hidden Realities Playbook thumbnail" width="100%"/></a>
                 <a href="https://github.com/ibocus/hidden-realities-playbook" target="_blank" rel="noreferrer"><h2>Hidden Realities Playbook</h2></a>
                 <p>Real, anonymised stories captured live during an ISO 27001:2022 ISMS implementation &mdash; the organisational 80% the frameworks don&apos;t tell you about.</p>
+            </div>
+            <div className="project">
+                <a href="https://car-service-booking-brown.vercel.app" target="_blank" rel="noreferrer"><img src={carServiceBooking} className="zoom" alt="Car Service Booking thumbnail" width="100%"/></a>
+                <a href="https://car-service-booking-brown.vercel.app" target="_blank" rel="noreferrer"><h2>Car Service Booking</h2></a>
+                <p>A structured booking page pitched to an independent mechanic as a WhatsApp-only-booking replacement: a 4-step wizard for customers and a job-sheet admin view for the garage.</p>
+            </div>
+            <div className="project">
+                <a href="https://care-recruitment-app.vercel.app" target="_blank" rel="noreferrer"><img src={careRecruitment} className="zoom" alt="Care Recruitment Platform thumbnail" width="100%"/></a>
+                <a href="https://care-recruitment-app.vercel.app" target="_blank" rel="noreferrer"><h2>Care Recruitment Platform</h2></a>
+                <p>A de-branded, demo-mode recruitment pipeline for care agencies: Supabase-backed applications, document handling, and WhatsApp-driven candidate updates.</p>
             </div>
         </div>
     </div>
