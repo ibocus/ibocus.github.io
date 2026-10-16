@@ -21,12 +21,26 @@
 
 .projects-container .projects-grid .project:hover {
     transform: translateY(-6px);
-    border-color: rgba(34, 166, 181, 0.3);
-    background-color: rgba(232, 244, 245, 0.03);
+    background-color: rgba(245, 242, 255, 0.03);
 }
 
+.projects-container .projects-grid .project:nth-child(3n+1):hover {
+    border-color: rgba(45, 212, 191, 0.35);
+}
+
+.projects-container .projects-grid .project:nth-child(3n+2):hover {
+    border-color: rgba(157, 124, 255, 0.35);
+}
+
+.projects-container .projects-grid .project:nth-child(3n):hover {
+    border-color: rgba(243, 167, 56, 0.35);
+}
+
+.project:nth-child(3n+1) h2:hover { color: var(--teal); }
+.project:nth-child(3n+2) h2:hover { color: var(--violet); }
+.project:nth-child(3n) h2:hover { color: var(--gold); }
+
 .project h2:hover {
-    color: #22A6B5;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 

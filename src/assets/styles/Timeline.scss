@@ -30,8 +30,8 @@
 }
 
 .ledger-entry.current {
-  background-color: rgba(34, 166, 181, 0.06);
-  border: 1px solid rgba(34, 166, 181, 0.24);
+  background: linear-gradient(135deg, rgba(157, 124, 255, 0.08), rgba(45, 212, 191, 0.04));
+  border: 1px solid rgba(157, 124, 255, 0.3);
   padding-left: 0.5rem;
 }
 
@@ -49,9 +49,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #0F2A52;
-  border: 1px solid rgba(34, 166, 181, 0.5);
-  color: #22A6B5;
+  background: var(--ink);
+  border: 1px solid rgba(45, 212, 191, 0.5);
+  color: var(--teal);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 0.95rem;
   font-weight: 600;
@@ -59,9 +59,9 @@
 }
 
 .ledger-entry.current .ledger-index {
-  background: #22A6B5;
-  color: #0F2A52;
-  border-color: #22A6B5;
+  background: linear-gradient(135deg, var(--violet), var(--teal));
+  color: var(--ink);
+  border-color: transparent;
 }
 
 .ledger-body {
@@ -83,15 +83,15 @@
 }
 
 .ledger-tag {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: 'Plex Sans', -apple-system, sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #22A6B5;
-  border: 1px solid rgba(34, 166, 181, 0.45);
-  border-radius: 2px;
-  padding: 0.15rem 0.5rem;
+  letter-spacing: 0.03em;
+  color: var(--violet);
+  background: var(--violet-soft);
+  border: 1px solid rgba(157, 124, 255, 0.45);
+  border-radius: 100px;
+  padding: 0.15rem 0.6rem;
 }
 
 .ledger-meta {
@@ -108,7 +108,7 @@
 }
 
 .ledger-date {
-  color: #22A6B5;
+  color: var(--teal);
 }
 
 .ledger-body p {

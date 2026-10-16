@@ -11,6 +11,29 @@
   padding-top: 30px;
 }
 
+.contact-links {
+  .MuiButton-contained {
+    background: linear-gradient(135deg, var(--violet), var(--teal));
+    color: #121130;
+    font-weight: 600;
+  }
+
+  .MuiButton-contained:hover {
+    background: linear-gradient(135deg, var(--violet), var(--teal));
+    filter: brightness(1.08);
+  }
+
+  .MuiButton-outlined {
+    border-color: rgba(245, 242, 255, 0.3);
+    color: #F5F2FF;
+  }
+
+  .MuiButton-outlined:hover {
+    border-color: var(--teal);
+    background-color: var(--teal-soft);
+  }
+}
+
 .contact-form {
   padding-top: 20px;
 
@@ -21,7 +44,7 @@
   }
 
   button:hover {
-    background-color: #22A6B5;
+    background-color: #2DD4BF;
     color: white;
   }
 

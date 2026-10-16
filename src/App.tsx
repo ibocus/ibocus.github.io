@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {
   Main,
+  Credentials,
   Timeline,
   NowBuilding,
   Expertise,
@@ -34,6 +35,7 @@ function App() {
         <FadeIn transitionDuration={700}>
             <Main/>
         </FadeIn>
+        <ScrollReveal><Credentials/></ScrollReveal>
         <ScrollReveal><Expertise/></ScrollReveal>
         <ScrollReveal><Timeline/></ScrollReveal>
         <ScrollReveal><NowBuilding/></ScrollReveal>

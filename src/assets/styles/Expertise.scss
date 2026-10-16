@@ -25,14 +25,35 @@
     grid-column: 1;
     grid-row: 1 / 3;
     padding: 32px;
-    border: 1px solid rgba(34, 166, 181, 0.28);
-    border-radius: 4px;
-    background: rgba(34, 166, 181, 0.06);
+    border-radius: 8px;
 }
 
 .skills-container .skills-grid .skill:first-child h3 {
     font-size: 1.5em;
 }
+
+.skill-violet svg { color: var(--violet); }
+.skill-gold svg { color: var(--gold); }
+.skill-teal svg { color: var(--teal); }
+
+.skill-violet:first-child {
+    border: 1px solid rgba(157, 124, 255, 0.28);
+    background: linear-gradient(160deg, rgba(157, 124, 255, 0.08), rgba(245, 242, 255, 0.02));
+}
+
+.skill-gold:first-child {
+    border: 1px solid rgba(243, 167, 56, 0.28);
+    background: linear-gradient(160deg, rgba(243, 167, 56, 0.08), rgba(245, 242, 255, 0.02));
+}
+
+.skill-teal:first-child {
+    border: 1px solid rgba(45, 212, 191, 0.28);
+    background: linear-gradient(160deg, rgba(45, 212, 191, 0.08), rgba(245, 242, 255, 0.02));
+}
+
+.skill-violet .chip { background-color: #EDE6FF !important; }
+.skill-gold .chip { background-color: #FCECD3 !important; }
+.skill-teal .chip { background-color: #DAF8F3 !important; }
   
 .chip {
     color: rgb(39, 40, 34) !important;

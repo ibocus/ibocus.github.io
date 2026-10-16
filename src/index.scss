@@ -22,6 +22,18 @@
   src: url('./assets/fonts/plex-sans-600.woff2') format('woff2');
 }
 
+:root {
+  --ink: #121130;
+  --ink-2: #1D1B45;
+  --paper: #F5F2FF;
+  --gold: #F3A738;
+  --gold-soft: rgba(243, 167, 56, 0.14);
+  --violet: #9D7CFF;
+  --violet-soft: rgba(157, 124, 255, 0.14);
+  --teal: #2DD4BF;
+  --teal-soft: rgba(45, 212, 191, 0.14);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -39,7 +51,7 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0F2A52;
+  background-color: var(--ink);
 
 }
 
@@ -48,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: #22A6B5;
+  color: var(--teal);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -65,10 +77,10 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: rgba(15, 42, 82, 0.72) !important;
+  background-color: rgba(18, 17, 48, 0.72) !important;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(232, 244, 245, 0.1);
+  border-bottom: 1px solid rgba(245, 242, 255, 0.1);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
 }
 
@@ -90,7 +102,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
       right: 10px;
       bottom: 2px;
       height: 1px;
-      background: #22A6B5;
+      background: var(--teal);
       transform: scaleX(0);
       transform-origin: left;
       transition: transform .25s ease;
@@ -149,11 +161,11 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
-#expertise, #history, #projects, #contact {
+#credentials, #expertise, #history, #projects, #contact {
   position: relative;
 }
 
-#expertise::before, #history::before, #projects::before, #contact::before {
+#credentials::before, #expertise::before, #history::before, #projects::before, #contact::before {
   content: "";
   position: absolute;
   top: 0;
@@ -164,12 +176,22 @@ p, a, h1, h2, h3, h4, h5, label, button {
   z-index: -1;
 }
 
+#credentials::before {
+  background:
+    radial-gradient(70% 80% at 15% 0%, rgba(243, 167, 56, 0.09), transparent 65%),
+    radial-gradient(60% 70% at 85% 10%, rgba(157, 124, 255, 0.10), transparent 65%);
+}
+
 #expertise::before, #projects::before {
-  background: radial-gradient(85% 90% at 88% 0%, rgba(79, 209, 197, 0.08), transparent 65%);
+  background:
+    radial-gradient(60% 70% at 90% 0%, rgba(157, 124, 255, 0.10), transparent 65%),
+    radial-gradient(55% 60% at 100% 25%, rgba(79, 209, 197, 0.08), transparent 65%);
 }
 
 #history::before, #contact::before {
-  background: radial-gradient(90% 100% at 12% 0%, rgba(34, 166, 181, 0.09), transparent 65%);
+  background:
+    radial-gradient(70% 80% at 10% 0%, rgba(243, 167, 56, 0.08), transparent 65%),
+    radial-gradient(55% 60% at 20% 20%, rgba(34, 166, 181, 0.07), transparent 65%);
 }
 
 .light-mode {
@@ -186,7 +208,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   a:hover {
-    color: #22A6B5;
+    color: #0E9C8C;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
@@ -195,7 +217,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   .about-section {
-    background: radial-gradient(120% 90% at 85% 10%, rgba(34,166,181,0.10), transparent 60%);
+    background: radial-gradient(120% 90% at 85% 10%, rgba(157,124,255,0.10), transparent 60%);
   }
 
   .skills-container svg {
@@ -220,8 +242,9 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   .ledger-entry.current .ledger-index {
-    background: #22A6B5;
+    background: #7C5CFF;
     color: #f8f9fa;
+    border-color: #7C5CFF;
   }
 
   .ledger-org {

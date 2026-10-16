@@ -40,7 +40,7 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
-                <div className="skill">
+                <div className="skill skill-violet">
                     <FontAwesomeIcon icon={faShieldHalved} size="3x"/>
                     <h3>Security Governance &amp; Compliance</h3>
                     <p>15+ years across financial services, legal, and healthcare. CISM-certified and Lead Implementor of ISO 27001:2022: built an ISMS from the ground up, from risk assessment to Annex A controls to audit readiness.</p>
@@ -52,7 +52,7 @@ function Expertise() {
                     </div>
                 </div>
 
-                <div className="skill">
+                <div className="skill skill-gold">
                     <FontAwesomeIcon icon={faDiagramProject} size="3x"/>
                     <h3>Project &amp; Program Delivery</h3>
                     <p>PMP-certified, MSc in Software Project Management. I run technology initiatives end to end: planning, stakeholder alignment, vendor oversight, and delivery in regulated environments.</p>
@@ -64,7 +64,7 @@ function Expertise() {
                     </div>
                 </div>
 
-                <div className="skill">
+                <div className="skill skill-teal">
                     <FontAwesomeIcon icon={faRobot} size="3x"/>
                     <h3>Building the Tools, Not Just the Slides</h3>
                     <p>Frameworks only work when someone turns them into something a team can use on a Tuesday morning. I build the assessments, dashboards, and trackers: not just the policy documents.</p>

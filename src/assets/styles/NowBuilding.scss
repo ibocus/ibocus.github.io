@@ -9,14 +9,14 @@
   text-align: left;
   padding: 1.4rem 1.5rem;
   border-radius: 6px;
-  border: 1px solid rgba(34, 166, 181, 0.24);
-  background-color: rgba(34, 166, 181, 0.06);
+  border: 1px solid rgba(243, 167, 56, 0.24);
+  background-color: rgba(243, 167, 56, 0.06);
   transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), border-color .3s ease, background-color .3s ease;
 }
 
 .now-building-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(34, 166, 181, 0.45);
+  border-color: rgba(243, 167, 56, 0.45);
 }
 
 .now-building-head {
@@ -33,15 +33,15 @@
 }
 
 .now-building-tag {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: 'Plex Sans', -apple-system, sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #22A6B5;
-  border: 1px solid rgba(34, 166, 181, 0.45);
-  border-radius: 2px;
-  padding: 0.15rem 0.5rem;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid rgba(243, 167, 56, 0.45);
+  border-radius: 100px;
+  padding: 0.15rem 0.6rem;
 }
 
 .now-building-card p {
@@ -63,7 +63,7 @@
 }
 
 .now-building-date {
-  color: #22A6B5;
+  color: var(--gold);
 }
 
 @media screen and (max-width: 700px) {
