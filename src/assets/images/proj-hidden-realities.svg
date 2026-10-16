@@ -1,19 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17456B"/>
-      <stop offset="100%" stop-color="#0F2A52"/>
+      <stop offset="0%" stop-color="#1D1B45"/>
+      <stop offset="100%" stop-color="#121130"/>
     </linearGradient>
-    <radialGradient id="glow" cx="88%" cy="8%" r="70%">
-      <stop offset="0%" stop-color="rgba(79,209,197,0.22)"/>
-      <stop offset="100%" stop-color="rgba(79,209,197,0)"/>
-    </radialGradient>
+    <clipPath id="card">
+      <rect width="1200" height="790" rx="28" ry="28"/>
+    </clipPath>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
   </defs>
-  <rect width="1200" height="790" fill="url(#bg)"/>
-  <rect width="1200" height="790" fill="url(#glow)"/>
-  <rect x="1" y="1" width="1198" height="788" fill="none" stroke="rgba(232,244,245,0.22)" stroke-width="2"/>
-  <text x="70" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-style="italic" fill="#4FD1C5">07</text>
-  <line x1="70" y1="185" x2="1130" y2="185" stroke="rgba(232,244,245,0.22)" stroke-width="2"/>
-  <text x="70" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#E8F4F5"><tspan x="70" dy="0">Hidden Realities</tspan><tspan x="70" dy="66">Playbook</tspan></text>
-  <text x="70" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#B7C9D6">Real stories from an ISO 27001 ISMS build</text>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="790" fill="url(#bg)"/>
+    <g filter="url(#soft)">
+      <circle cx="960" cy="40" r="300" fill="rgba(45,212,191,0.30)"/>
+      <circle cx="150" cy="740" r="220" fill="rgba(45,212,191,0.14)"/>
+    </g>
+    <rect x="0.5" y="0.5" width="1199" height="789" rx="27.5" ry="27.5" fill="none" stroke="rgba(245,242,255,0.14)" stroke-width="1"/>
+    <circle cx="102" cy="92" r="30" fill="rgba(45,212,191,0.18)"/>
+    <text x="102" y="101" font-family="'Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#2DD4BF" text-anchor="middle">07</text>
+    <text x="70" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#F5F2FF"><tspan x="70" dy="0">Hidden Realities</tspan><tspan x="70" dy="66">Playbook</tspan></text>
+    <text x="70" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="rgba(245,242,255,0.55)">Real stories from an ISO 27001 ISMS build</text>
+  </g>
 </svg>

@@ -32,6 +32,7 @@ const labelsThird = [
     "Applied AI",
     "Secure SDLC",
     "Web App Development",
+    "Creative Mind",
 ];
 
 function Expertise() {
